@@ -96,6 +96,6 @@ CANCELLED est notre target et nous avons retirer les variables ARR_DEL15, ARR_TI
 Le LGBM Classifier nous donne la méilleur précision de 99.53%
 <img src="goal2.jpg">
 ### A quelle heure l'avion va-t-il arrivé?
-ARR_TIME est notre target.
+ARR_TIME est notre target. On effectue juste une régression linéaire et obtenons un r2 de 0.60 qui atteste d'une faible linéarité entre le temps d'arriver et les autres variables choisie
 ### A quelle heure l'avion va-t-il décollé?
-ARR_DEL15 est notre target.
+ARR_DEL15 est notre target. On effectue juste une régression linéaire et obtenons un r2 de 0.91, contrairement au temps d'arrivé, un retard de plus de 15 minutes est grande linéaire des autres variables.
