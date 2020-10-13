@@ -1,0 +1,53 @@
+#container
+{
+    background-color: lightslategray;
+    padding: 10px;
+    padding-bottom: 50px;
+    height: 300px;;
+}
+
+h1, legend
+{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#arr
+{
+    display: inline-block;
+    position: absolute;
+    left: 10%;
+    right: -600px;
+    width: 600px;
+}
+
+#dep
+{
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    right: -600px;
+    width: 600px;
+}
+
+input
+{
+    position: absolute;
+    right: 4px;
+}
+
+input[type="submit"]
+{
+    position: absolute;
+    right: 10%;
+    width: 75%;
+    height: 25px;
+}
+
+h2
+{
+    position: relative;
+    top: 30px;
+    left: 15px;
+}

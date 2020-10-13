@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8"/>
+		<link rel="stylesheet" type="text/css" href="{% static 'prediction/style.css' %}">
+		<title>App in the air</title>
+	</head>
+	<body>
+		<div id="container">
+			<h1>Flight assistant</h1>
+			<div>
+				<div id="arr">
+					<form method="post" action="/accueil/arr">
+						<legend>Prédire son heure d'arrivée</legend>
+						{% csrf_token %}
+						{{ arrform.as_p }}
+						<input type="submit" value="Prédire l'heure d'arrivée">
+						
+					</form>
+					<h2>Arrivée: {{arr}}</h2>
+				</div>
+				<div id="dep"> 
+					<form method="post" action="/accueil/dep">
+						<legend>Prédire son heure de départ</legend>
+						{% csrf_token %}
+						{{ depform.as_p }}
+						<input type="submit" value="Prédire l'heure de départ">
+						
+					</form>
+					<h2>Départ: {{dep}}</h2>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
